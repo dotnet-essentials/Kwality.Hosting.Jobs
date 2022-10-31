@@ -54,6 +54,6 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration ${BUILD_CONFIG} /p:Version=${VERSION} --no-build --output . ${PROJECT}
     - name: Publish
-      run: dotnet nuget push Kwality.Hosting.LockableHostedServices.${VERSION}.nupkg --api-key ${NUGET_API_KEY} --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push Kwality.Hosting.Jobs.${VERSION}.nupkg --api-key ${NUGET_API_KEY} --source https://api.nuget.org/v3/index.json
       env:
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}

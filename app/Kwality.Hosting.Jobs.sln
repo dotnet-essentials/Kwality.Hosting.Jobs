@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "100. REPOSITORY CONFIGURATION.", "100. REPOSITORY CONFIGURATION.", "{E01E4BE4-680E-4F8B-B761-E6B09748E494}"
+	ProjectSection(SolutionItems) = preProject
+		..\.editorconfig = ..\.editorconfig
+		..\.gitattributes = ..\.gitattributes
+		..\.gitignore = ..\.gitignore
+		..\LICENSE = ..\LICENSE
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "200. CONTINUOUS INTEGRATION.", "200. CONTINUOUS INTEGRATION.", "{D224E155-319A-48E9-ACE2-9C3A302BFE45}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\analyze.yml = ..\.github\workflows\analyze.yml
+		..\.github\workflows\ci.yml = ..\.github\workflows\ci.yml
+		..\.github\workflows\release-preview.yml = ..\.github\workflows\release-preview.yml
+		..\.github\workflows\release.yml = ..\.github\workflows\release.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "300. ANALYZERS AND CODE STYLE CONFIGURATION.", "300. ANALYZERS AND CODE STYLE CONFIGURATION.", "{83086544-3562-4437-9ABC-50DF47155FA0}"
+	ProjectSection(SolutionItems) = preProject
+		.globalconfig = .globalconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "400. SOURCE.", "400. SOURCE.", "{11DE2C5F-39F0-41B7-BE7C-77830C9A0ACB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "500. TESTS.", "500. TESTS.", "{1FDAC4E3-DF47-415F-9F95-0801F503071A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kwality.Hosting.Jobs", "Kwality.Hosting.Jobs\Kwality.Hosting.Jobs.csproj", "{2C398262-2042-4222-8C36-58C052306952}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kwality.Hosting.Jobs.Tests", "Kwality.Hosting.Jobs.Tests\Kwality.Hosting.Jobs.Tests.csproj", "{32A35950-00CE-4CD6-A072-7537AB479835}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C398262-2042-4222-8C36-58C052306952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C398262-2042-4222-8C36-58C052306952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C398262-2042-4222-8C36-58C052306952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C398262-2042-4222-8C36-58C052306952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A35950-00CE-4CD6-A072-7537AB479835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A35950-00CE-4CD6-A072-7537AB479835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A35950-00CE-4CD6-A072-7537AB479835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A35950-00CE-4CD6-A072-7537AB479835}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2C398262-2042-4222-8C36-58C052306952} = {11DE2C5F-39F0-41B7-BE7C-77830C9A0ACB}
+		{32A35950-00CE-4CD6-A072-7537AB479835} = {1FDAC4E3-DF47-415F-9F95-0801F503071A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B96202FA-ED2C-41F2-ADB3-D544EF2D908E}
+	EndGlobalSection
+EndGlobal
